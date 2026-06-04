@@ -1,18 +1,12 @@
 
-# Slide Training Pro
+# Treinamento V1
 
-Projeto profissional base para editor de treinamentos.
+Instalação:
 
-Recursos planejados:
-- Ctrl+V para imagens
-- Drag and Drop
-- Múltiplos slides
-- Setas animadas
-- Círculos e destaques
-- Exportação PDF
-- Exportação PNG
-- Undo/Redo
-- Layers
-- Templates
-- Zustand Store
-- React + TypeScript + Konva
+npm install
+npm run dev
+
+Deploy Vercel:
+Framework Preset: Vite
+Build Command: npm run build
+Output Directory: dist
