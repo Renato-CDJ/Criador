@@ -30,10 +30,10 @@ export default function App(){
   <Stage width={1400} height={850}>
    <Layer>
     {items.map((i:any,index:number)=>{
-      if(i.type==='rect') return <Rect key={index} x={80} y={80} width={180} height={80} draggable />;
-      if(i.type==='circle') return <Circle key={index} x={300} y={200} radius={50} draggable />;
-      if(i.type==='arrow') return <Arrow key={index} points={[100,100,300,200]} draggable />;
-      if(i.type==='text') return <Text key={index} text="Novo Texto" x={100} y={50} draggable />;
+      if(i.type==='rect') return <Rect key={index} x={80} y={80} width={180} height={80} fill="#3b82f6" stroke="#1d4ed8" strokeWidth={2} draggable />;
+      if(i.type==='circle') return <Circle key={index} x={300} y={200} radius={50} fill="#22c55e" stroke="#15803d" strokeWidth={2} draggable />;
+      if(i.type==='arrow') return <Arrow key={index} points={[100,100,300,200]} fill="#ef4444" stroke="#ef4444" strokeWidth={3} pointerLength={10} pointerWidth={10} draggable />;
+      if(i.type==='text') return <Text key={index} text="Novo Texto" x={100} y={50} fontSize={20} fill="#1f2937" draggable />;
       return null;
     })}
    </Layer>
