@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm install && npm run build",
-  "env": {
-    "NODE_ENV": "production"
-  }
+  "framework": "vite",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
